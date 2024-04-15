@@ -1,0 +1,49 @@
+.button {
+    all: unset;
+    position: relative;
+    height: 34px;
+    display: block;
+    background: transparent;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FEA93D;
+}
+.button:focus-visible,
+.button:focus-within,
+.button:focus {
+    border: none;
+}
+.button:before,
+.button:after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    left: 0;
+    top: 0;
+    height: 32px;
+    rotate: 90deg;
+}
+
+.button:before {
+    left: 24px;
+    transform: perspective(9px) rotateX(10deg);
+}
+.button:after {
+    top: 0;
+    left: -30px;
+    transform: perspective(9px) rotateX(-10deg);
+}
+
+/* Button Border Style */
+
+.button:before,
+.button:after {
+    border: 4px solid #FEA93D;
+}
+.button:before {
+    border-bottom: none;
+}
+.button:after {
+    border-top: none;
+}

@@ -1,0 +1,10 @@
+.container {
+    background-image: url("../../assets/home_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 490px;
+    width: 490px;
+    height: 100vh;
+}
